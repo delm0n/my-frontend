@@ -3,56 +3,56 @@
 @font-face {
   font-family: "Gilroy";
   font-display: swap;
-  src: local("вШЇ"), url("../../../../../../fonts/Gilroy-Regular.woff2") format("woff2"), url("../../../../../fonts/Gilroy-Regular.woff") format("woff");
+  src: local("вШЇ"), url("fonts/Gilroy-Regular.woff2") format("woff2"), url("fonts/Gilroy-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Gilroy-Bold";
   font-display: swap;
-  src: local("вШЇ"), url("../../../../../fonts/Gilroy-Bold.woff2") format("woff2"), url("../../../../../fonts/Gilroy-Bold.woff") format("woff");
+  src: local("вШЇ"), url("fonts/Gilroy-Bold.woff2") format("woff2"), url("fonts/Gilroy-Bold.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Gilroy-Heavy";
   font-display: swap;
-  src: local("вШЇ"), url("../../../../../fonts/Gilroy-Heavy.woff2") format("woff2"), url("../../../../../fonts/Gilroy-Heavy.woff") format("woff");
+  src: local("вШЇ"), url("fonts/Gilroy-Heavy.woff2") format("woff2"), url("fonts/Gilroy-Heavy.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Gilroy-Black";
   font-display: swap;
-  src: local("вШЇ"), url("../../../../../fonts/Gilroy-Black.woff2") format("woff2"), url("../../../../../fonts/Gilroy-Black.woff") format("woff");
+  src: local("вШЇ"), url("fonts/Gilroy-Black.woff2") format("woff2"), url("fonts/Gilroy-Black.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Gilroy-Light";
   font-display: swap;
-  src: local("вШЇ"), url("../../../../../fonts/Gilroy-Light.woff2") format("woff2"), url("../../../../../fonts/Gilroy-Light.woff") format("woff");
+  src: local("вШЇ"), url("fonts/Gilroy-Light.woff2") format("woff2"), url("fonts/Gilroy-Light.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Gilroy-Semibold";
   font-display: swap;
-  src: local("вШЇ"), url("../../../../../fonts/Gilroy-Semibold.woff2") format("woff2"), url("../../../../../fonts/Gilroy-Semibold.woff") format("woff");
+  src: local("вШЇ"), url("fonts/Gilroy-Semibold.woff2") format("woff2"), url("fonts/Gilroy-Semibold.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Gilroy-Extrabold";
   font-display: swap;
-  src: local("вШЇ"), url("../../../../../fonts/Gilroy-Extrabold.woff2") format("woff2"), url("../../../../../fonts/Gilroy-Extrabold.woff") format("woff");
+  src: local("вШЇ"), url("fonts/Gilroy-Extrabold.woff2") format("woff2"), url("fonts/Gilroy-Extrabold.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Gilroy-Medium";
   font-display: swap;
-  src: local("вШЇ"), url("../../../../../fonts/Gilroy-Medium.woff2") format("woff2"), url("../../../../../fonts/Gilroy-Medium.woff") format("woff");
+  src: local("вШЇ"), url("fonts/Gilroy-Medium.woff2") format("woff2"), url("fonts/Gilroy-Medium.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -889,7 +889,7 @@ p.title,
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA00lEQVQ4jZWSvwrBURTHP/0Uk8hTiIxWoxGD17EwERk8hNEDiMUgL0BiVEyShVK+lvsrXUfcW98695zO554/FwFOXcFOkH7z/VRs9AVyaoUCOm/JElwEuRDA3QNI0PsXEAFXPk/Z8NlHMPFePwnyIS3UPcAqdIiRYO1BGqFrrAie3iZKIQAEI6+Kg6AYAkgKZh7kLKi5eEGwFUyd/QFAkBEsjX+xcNuJ7w/BUJC1ykoL5gbE0v5bbyljJpYGv6ZcFWy+JVszsJQQNAVjwVFwE7Tj+AuDoENmGKcQhAAAAABJRU5ErkJggg==);
 }
 
-.form-container form input[type=button] {
+.form-container form input[type=submit] {
   display: block;
   width: 100%;
   /* height: 74px; */
