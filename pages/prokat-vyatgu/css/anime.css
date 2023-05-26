@@ -1,0 +1,59 @@
+.loaderArea {
+    background: rgba(255, 255, 255, 0.75);
+    /* overflow: hidden; */
+    position: fixed;
+     left: 0;
+    top: 0; 
+     right:0;
+    bottom:0; 
+    z-index: 100000;
+  }
+
+
+
+  .my_blur{
+    filter: blur(10px);
+      }
+
+.loader,
+.loader:after {
+  overflow:hidden;
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+  
+}
+.loader {
+
+  font-size: 7px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-indent: -9999em;
+  border-top: 1.2em solid rgba(255, 255, 255, 0);
+  border-right: 1.2em solid #324E97;
+  border-bottom: 1.2em solid rgba(255, 255, 255, 0);
+  border-left: 1.2em solid #324E97;
+  animation: rotationFish 2.15s infinite ease-out;
+
+}
+
+@keyframes rotationFish {
+    0% {
+      transform: rotate(0deg);  
+    }
+    80% {
+      transform: rotate(435deg);
+    }
+    90% {
+        transform: rotate(415deg);
+    }
+    100%{
+        transform: rotate(315deg);
+    }
+  }
+
+.loader_stop{
+    display: none;
+}
+

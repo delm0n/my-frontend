@@ -1,0 +1,15 @@
+{
+    "name": "",
+    "version": "1.0.0",
+    "description": "",
+    "main": "gulpfile.js",
+    "devDependencies": {
+      "sass": "^1.32.8"
+    },
+    "scripts": {
+      "watch": "sass --watch scss/main.scss:css/main.css"
+    },
+    "author": "Zuev Artyom",
+    "license": "ISC"
+  }
+  

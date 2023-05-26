@@ -1,0 +1,42 @@
+header {
+  font-family: "Montserrat";
+  background: linear-gradient(
+    277.47deg,
+    rgba(166, 166, 166, 0.42) -11.88%,
+    rgba(215, 215, 215, 0.2016) 131.01%
+  );
+
+  a {
+    text-decoration: none !important;
+  }
+
+  p,
+  a,
+  ul {
+    margin: 0;
+  }
+
+  .container {
+    max-width: calc(1590px + 40px);
+    padding: 0 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    @media (max-width: 425px) {
+      padding: 0 10px;
+    }
+  }
+
+  @keyframes dash {
+    from {
+      stroke-dashoffset: 822;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  @import "./header-top";
+  @import "./header-main";
+}

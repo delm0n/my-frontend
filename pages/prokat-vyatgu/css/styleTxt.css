@@ -1,0 +1,851 @@
+:root {
+    --MainColor: #1754F1;
+    --Iarche: #0A5CD2;
+    --IconColor: #324E97;
+}
+
+a {
+    text-decoration: none;
+}
+
+.imgContLogo {
+    background-size: cover ;
+    width: 205px;
+    height: 100px;
+}
+
+.imgContLogo img, .imgContCard img, .imgContRaiting img {
+    width: 100%;
+    height: 100%;
+}
+
+.btn {
+    text-decoration: none;
+    user-select:none;
+    cursor: pointer;
+    border: 2px solid #1754F1;
+    padding: 16px 44px;
+    border-radius: 20px;
+    color: var(--MainColor);
+
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: bold; 
+
+    position: relative;
+    top: 0px;
+    /* box-shadow: 0 1px 0px 0 var(--MainColor);  */
+    transition: all 0.2s ease 0s;
+}
+
+.btn:hover { /* анимация при нажатии */
+    top: -1px; /* смещение без рушения иерархии при нажатии */
+    box-shadow: 0 2px 0px 0 var(--MainColor); /* тень внизу */
+}
+
+.btn:active { /* анимация при нажатии */
+    top: 1px; /* смещение без рушения иерархии при нажатии */
+    box-shadow:none; 
+}
+
+main {
+    background-image: url(../img/main2.png);
+    /* background: rgba(23, 84, 241, 0.55), url(img/main.png); */
+}
+
+.titleInSection_page {
+    padding:0px 4px 2px 4px;
+    /* border-bottom: 2px solid white; */
+    position: relative;
+}
+
+.title_block{
+margin-bottom: 5px;
+    }
+
+.title_block::after{
+content: '';
+width: 0;
+position: absolute;
+left: 0;
+right: 0;
+bottom: -1px;
+height: 2px;
+background-color: var(--MainColor);
+transition: width 0.3s ease-in-out 0s;
+}
+
+.title_block_active::after{
+    width: 100%;
+}
+
+.content_page {
+    display: none;
+    
+}
+.active_page {
+    display: block;
+}
+
+.imgContRaiting {
+    background-size: cover ;
+    width: 60px;
+    height: 50px;
+}
+
+.bg {
+    display: none;
+    position:absolute;
+    top: 0px;
+    width: 100%;
+    height:100%;
+    background: rgba(23, 84, 241, 0.4);
+}
+
+.bg-act {
+    display: block;
+    position:absolute;
+    top: 0px;
+    width: 100%;
+    height:100%;
+    background: rgba(23, 84, 241, 0.4);
+
+}
+
+
+.card_title {
+    font-family: "Raleway";
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 26px;
+color: #03174B;
+margin-top: 20px;
+text-align: center;
+}
+
+.decript_card {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    
+    
+    color: #03174B;
+}
+
+.icon-ped, .icon-B, .icon-D, .icon-J, .icon-C, .icon-door,.icon-trans {
+    text-align: center;
+}
+
+.price_itself {
+    font-family: "Montserrat";
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 29px;
+
+color: #00045F;
+}
+
+.price_decr{font-family: "Montserrat";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    
+    color: #00045F;
+}
+
+.line_card {
+    height: 2px;
+    width: 242px;
+    margin: 20px auto;
+    /* background: rgba(3, 23, 75, 0.6); */
+    background: rgba(3, 23, 75, 0.4);
+}
+
+.raiting_decr {
+    font-family: "Raleway";
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 19px;
+
+color: var(--Iarche) ;
+}
+
+.raiting_rew
+{
+    font-family: "Montserrat";
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 18px;
+
+color: rgba(3, 23, 75, 0.4);
+}
+
+
+
+.btn_bg1_order, .btn_bg2_details {
+    position: relative;
+    top: 0px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    border-radius: 20px;
+    color: white;
+    border: 2px solid white;
+    text-align: center;
+    text-decoration: none;
+    user-select:none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn_bg1_order {
+padding: 19px 72px;
+margin: 130px 51px 30px 51px;
+
+}
+
+.btn_bg2_details {
+padding: 19px 58px;
+margin: 0px 51px 140px 51px;
+}
+
+.btn_bg1_order:hover, .btn_bg2_details:hover {
+    transition: all 0.3s ease 0s;
+color: var(--Iarche);
+border: 2px solid white;
+background-color: #fff;
+
+}
+
+.btn_bg1_order:active, .btn_bg2_details:active {
+    top: 4px;
+}
+
+.rott {
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    border: 1px solid var(--Iarche);
+    
+    background-color:var(--Iarche) ;
+    transition: all 0.2s ease 0s;
+    position: relative;
+    top: 0px;
+    cursor: pointer;
+}
+
+.swiper-pagination-bullet {
+    cursor: pointer;
+}
+
+.swiper-button-disabled {
+    background-color: white;
+}
+
+.str__left .str_cont .white, .str__right .str_cont .white{
+    display: block; 
+}
+.str__left .str_cont .blue, .str__right .str_cont .blue{
+    display: none;
+}
+
+.swiper-button-disabled .str_cont .white{
+display: none;
+}
+
+.swiper-button-disabled .str_cont .blue{
+    display: block;
+}
+
+
+
+.rott:active {
+    top: 2px;
+    transition: all 0.6s ease 0s;
+}
+
+/* .img-svg path{
+    fill: white;
+} */
+
+.str_cont {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-right: 4px;
+    margin-bottom: 20.5px;
+}
+
+.rott_rotate {
+    transform: rotate(180deg);
+}
+
+
+.mini__rott:hover{
+    background-color:var(--Iarche) ;
+}
+
+.mini__rott__active {
+    background-color:var(--Iarche) ;
+}
+
+.bigLetters {
+    font-family: "Raleway";
+font-style: normal;
+font-weight: bold;
+font-size: 50px;
+line-height: 59px;
+
+color: #F2F2F2;
+}
+
+.bigLetters__decription {
+    font-family: "Raleway";
+font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 20px;
+color: #F2F2F2;
+
+}
+
+.offer {
+ margin-top: 40px;
+}
+
+.myForm {
+    width: 430px;
+    height: 550px;
+    background-color: #FAFBFF;
+}
+
+.formTabs {
+    width: 50%;
+    text-align: center;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    text-decoration: none;
+    user-select: none;
+    cursor: pointer;
+    background: var(--MainColor);
+    font-family: "Raleway";
+font-style: normal;
+font-weight: bold;
+font-size: 19px;
+line-height: 23px;
+
+color: #FAFBFF;
+    }
+
+.formPages {
+padding: 25px 40px;
+}
+
+
+.formTabs__active {
+    background-color: #FAFBFF;
+    color:var(--MainColor) ;
+}
+
+.formPage__kawaii {
+    display: none;
+    /* margin: 0px auto; */
+}
+
+.formPage__active{
+    display: block;
+}
+
+.form {
+    width: 310px;
+    /* height: 54px; */
+    padding: 17px 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border: 1px solid rgba(3, 23, 75, 0.4);
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.02);
+}
+
+.form:active {
+    border: 1px solid rgba(3, 23, 75, 0.5);
+}
+
+::placeholder {
+    color: #00045F, 40%;
+    font-size: 1.2em;
+    font-family: "Montserrat";
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 18px;
+  }
+
+  .formText {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 15px;
+    /* or 103% */
+    text-align: left;
+    
+    color: #000000;
+  }
+
+span {
+    font-family: "Montserrat";
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 15px;
+color: #0A5CD2;
+}
+
+
+.form__btn{
+    margin: 19px 39px;
+    text-align: center;
+}
+
+.enter__btn{
+    margin: 19px 59px;
+    text-align: center;
+}
+
+.checkbox_form {
+    width: 20px;
+	height: 20px;
+}
+
+input {outline: 0 !important;}
+
+input:focus {
+    border-color: var(--Iarche);
+}
+
+.delivery, .quality, .discounts {
+    border: 3px solid rgba(255, 255, 255, 0.75);
+box-sizing: border-box;
+border-radius: 10px;
+width: 320px;
+flex-grow: 0;
+color: white;
+transition: all 0.4s ease 0s;
+}
+
+.delivery:hover, .quality:hover, .discounts:hover {
+    transform: scale(1.15);
+    transition: all 0.6s ease 0s;
+    text-decoration: none;
+    user-select: none;
+}
+
+.delivery, .quality {
+    padding: 33px 0px;
+    
+}
+
+.discounts{
+    padding: 24px 0px;
+}
+
+.name__about {
+    font-family: "Raleway";
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+}
+
+.decrip__about {
+    font-family: "Montserrat";
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+max-width: 260px;
+margin: 15px auto 0px auto;
+}
+
+.btn__upHead{
+    font-family: "Montserrat";
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 18px;
+/* text-align: center; */
+display: flex;
+flex-wrap: nowrap;
+align-items: center;
+column-gap: 10px;
+color: #FFFFFF;
+}
+
+
+.footer__block2 div, .footer__block3 div{
+text-decoration: none;
+user-select: none;
+    font-family: "Raleway";
+font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 18px;
+color: #FFFFFF;
+opacity: 0.8;
+margin-top: 26px;
+}
+
+.footer__block2 div:hover, .footer__block3 div:hover, .footer__block4> div:hover{
+    opacity: 1;
+}
+
+.instruction {
+    margin-top: 100px;
+}
+
+.imgWhiteBlockContainer{
+     text-align: center;
+     width: 110px;
+     height: 92px;
+   position: relative;
+}
+
+.imgWhiteBlockContainer img{
+background-size: cover;
+width: auto;
+height: auto;
+}
+
+.user_static{
+    padding-left: 8.1px;
+}
+
+.user_totate{
+    position: absolute;
+    left: 0;  
+}
+
+.anim_class:hover .user_totate, .rotateMyUser{
+    animation-name: rotationFish; 
+    animation-timing-function: ease-out;
+    animation-duration: 0.6s;
+}
+
+.text__whiteBlock{
+    font-family: "Montserrat";
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+color: var(--IconColor);
+}
+
+
+.imgContLogoBurger {
+    background-size: cover ;
+    width: 164px;
+    height: 80px;
+    z-index: 30;
+}
+
+.imgContLogoBurger img{
+    width: 100%;
+    height: 100%;
+}
+
+.menu__body a {
+    color: #03174B;
+}
+
+.menu__items{
+padding: 100px 30px 30px 30px;
+
+} 
+
+.personal_absolute{
+    padding: 30px;
+}
+
+.line__cont{
+    padding: 0px 30px;
+}
+
+.line__inBurg{
+    background-color: rgba(3, 23, 75, 0.4);
+    height: 1px;
+    width: 100%;
+}
+
+.personal_absolute-decr{
+    font-weight: 500;
+    font-size: 18px;
+    color: #576fab;
+    padding-left: 47px;
+}
+
+
+.img_personal_absoluteContainer {
+    text-align: center;
+    width: 37px;
+    height: 30px;
+    position: relative;
+}
+
+.contforimg {
+position: absolute;
+z-index: 50;
+}
+
+.img_personal_absoluteContainer img{
+    background-size: cover;
+    width: auto;
+    height: auto;
+}
+
+.user_static_personal{
+    padding-right: 1px;
+}
+
+.user_rotate_personal{
+    position: absolute;
+    left: 0;  
+}
+
+.sedan{
+    margin-left: 10px;
+}
+
+.ivent_item {
+    height: 500px;
+    width: 500px;
+    /* background-color: red; */
+    min-width: 0px;
+}
+
+.ivent_blocks {
+    display: inline-flex;
+}
+
+.content__place {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.content__img1 {
+    position: absolute;
+    z-index: 60;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/ivent1.png);
+    background-repeat: no-repeat;
+}
+
+.content__blur1 {
+    position: absolute;
+    z-index: 70;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/ivent1.png);
+    background-repeat: no-repeat;
+filter: blur(0px);
+    transition: filter 1s ease 0s;
+}
+
+.content__img2 {
+    position: absolute;
+    z-index: 60;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/ivent2.png);
+    background-repeat: no-repeat;
+}
+
+.content__blur2 {
+    position: absolute;
+    z-index: 70;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/ivent2.png);
+    background-repeat: no-repeat;
+filter: blur(0px);
+    transition: filter 1s ease 0s;
+}
+
+.content__img3 {
+    position: absolute;
+    z-index: 60;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/ivent3.png);
+    background-repeat: no-repeat;
+}
+
+.content__blur3 {
+    position: absolute;
+    z-index: 70;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/ivent3.png);
+    background-repeat: no-repeat;
+filter: blur(0px);
+    transition: filter 1s ease 0s;
+}
+
+.Title, .Decript {
+    position: absolute;
+    font-family: "Raleway";
+    font-style: normal;
+    text-align: center;
+    color: #FFFFFF;
+    z-index: 100;
+}
+
+.Title {
+    padding: 150px 40px;
+    transition: padding 0.4s ease 0s;
+    font-weight: bold;
+    line-height: 42px;
+    font-size: 36px;
+}
+
+.Decript {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 190px 40px;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.4s ease 0s;
+}
+
+.Button{
+    position: absolute;
+    z-index: 100;
+    top: 70%;
+    left: 25%;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.4s ease 0s;
+}
+
+.Button .btn_bg2_details {
+    margin: 0px;
+}
+
+@keyframes rotationFish {
+    0% {
+      transform: rotate(0deg);  
+    }
+    80% {
+      transform: rotate(435deg);
+    }
+    90% {
+        transform: rotate(415deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+  }
+
+
+
+
+@media (max-width:767px) {
+    .Title {
+        padding: 0px 10px;
+        top: 30%;
+        line-height: 30px;
+        font-size: 30px;
+}
+
+    .Button{
+        padding: 0px;
+        top: 60%;
+        left: 25%;
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    .Decript {
+        display: none;
+    }
+}
+
+@media (max-width:500px) {
+      
+    .content__place {
+        width: 400px;
+        height: 400px;
+    }
+
+    .Button{
+        left: 80px;
+        transform: translateY(0px) scale(0.85);
+    }
+}
+
+@media (max-width:400px) {
+      
+    .content__place {
+        width: 300px;
+        height: 300px;
+    }
+
+    .Title {
+        padding: 0px 10px;
+        top: 30%;
+        line-height: 30px;
+        font-size: 20px;
+}
+
+    .Button{
+        padding: 0px;
+        top: 60%;
+        left: 29px;
+        transform: translateY(0px) scale(0.7);
+        opacity: 1;
+    }
+
+}
+
+  @media (min-width:768px) {
+    .ivent_item:hover .Title{
+        padding: 70px 40px;
+        line-height: 36px;
+        transition: all 0.5s ease 0s;
+    }
+    
+    .ivent_item:hover .Decript, .ivent_item:hover .Button{
+        opacity: 1;
+        transform: translateY(0px);
+        transition: all 0.6s ease 0.2s;
+    }
+    
+    .ivent_item:hover .content__blur1{
+        filter: blur(5px);
+        transition: filter 0.4s ease 0s;
+    }
+    .ivent_item:hover .content__blur2{
+        filter: blur(5px);
+        transition: filter 0.4s ease 0s;
+    }
+    .ivent_item:hover .content__blur3{
+        filter: blur(5px);
+        transition: filter 0.4s ease 0s;
+    }
+  }

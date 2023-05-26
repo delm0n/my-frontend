@@ -1,0 +1,268 @@
+#may-banner {
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  position: relative;
+  background: url("../images/may-banner-bg-1.png") no-repeat,
+    url("../images/may-banner-bg-2.png") no-repeat, #f7f7f7;
+  background-position: top 0 left 0, bottom 0 left 40%;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  color: #323232;
+
+  @media (max-width: 1280px) {
+    background-position: top 0 left -35px, bottom 0 left 42%;
+    background-size: 175px, 465px;
+  }
+
+  @media (max-width: 992px) {
+    background: url("../images/may-banner-bg-3.png") no-repeat,
+      url("../images/may-banner-bg-2.png") no-repeat, #f7f7f7;
+    background-position: top 15% left -20px, bottom 3px right 0%;
+    background-size: 175px, 465px;
+  }
+
+  @media (max-width: 500px) {
+    background-position: top 15% left -40px, bottom 3px right 0%;
+    background-size: 120px, 275px;
+  }
+
+  .may-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 60px 20px 70px;
+
+    @media (max-width: 992px) {
+      padding: 30px 20px 30px;
+    }
+  }
+
+  .may-wrapper {
+    display: grid;
+    grid-template-columns: minmax(320px, 730px) minmax(320px, 572px);
+    column-gap: 40px;
+    align-items: center;
+
+    @media (max-width: 992px) {
+      grid-template-columns: 1fr;
+      max-width: 420px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      max-width: 280px;
+    }
+
+    .may-timer {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      display: flex;
+      flex-direction: column;
+
+      @media (max-width: 992px) {
+        grid-row: 4/5;
+        margin: 30px 0 10px;
+      }
+
+      p {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 27px;
+
+        @media (max-width: 768px) {
+          font-size: 16px;
+          line-height: 23px;
+        }
+      }
+
+      span#counter {
+        display: block;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+
+        @media (max-width: 992px) {
+          font-size: 26px;
+          line-height: 33px;
+        }
+      }
+    }
+
+    .may-title {
+      grid-column: 1/2;
+      grid-row: 2/3;
+
+      @media (max-width: 992px) {
+        grid-row: 1/2;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      p:first-child {
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 112%;
+
+        @media (max-width: 1440px) {
+          font-size: 50px;
+        }
+
+        @media (max-width: 992px) {
+          font-size: 40px;
+        }
+
+        @media (max-width: 768px) {
+          font-size: 24px;
+          line-height: 31px;
+        }
+      }
+
+      p:last-child {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 43px;
+        margin-top: 40px;
+
+        @media (max-width: 1440px) {
+          font-size: 32px;
+          margin-top: 30px;
+        }
+
+        @media (max-width: 992px) {
+          font-size: 24px;
+          margin-top: 20px;
+        }
+
+        @media (max-width: 992px) {
+          font-size: 20px;
+          line-height: 27px;
+        }
+      }
+    }
+
+    .may-decr {
+      grid-column: 1/2;
+      grid-row: 3/4;
+
+      @media (max-width: 992px) {
+        grid-row: 3/4;
+      }
+
+      p {
+        margin-top: 40px;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 132%;
+        max-width: 560px;
+        width: 100%;
+
+        @media (max-width: 1440px) {
+          margin-top: 30px;
+        }
+
+        @media (max-width: 992px) {
+          font-size: 20px;
+        }
+
+        @media (max-width: 768px) {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 25px;
+        }
+
+        span.warn {
+          color: #ff4e4e;
+          font-size: 25px;
+          line-height: 128%;
+
+          @media (max-width: 992px) {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 27px;
+          }
+        }
+
+        span.price {
+          white-space: nowrap;
+
+          &.new {
+            font-weight: 700;
+            font-size: 27px;
+            line-height: 126%;
+
+            @media (max-width: 992px) {
+              font-weight: 600;
+              font-size: 20px;
+              line-height: 27px;
+            }
+          }
+        }
+      }
+    }
+
+    .may-button {
+      grid-column: 1/2;
+      grid-row: 4/5;
+      margin-top: 50px;
+
+      @media (max-width: 992px) {
+        grid-row: 5/6;
+        margin: 35px auto 0;
+      }
+
+      @media (max-width: 768px) {
+        margin: 20px auto 0;
+      }
+
+      .may-btn {
+        width: 292px;
+        height: 73px;
+        background: #ff4e4e;
+        border-radius: 37px;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        transition: 0.4s all;
+        cursor: pointer;
+
+        @media (max-width: 768px) {
+          width: 175px;
+          height: 50px;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 25px;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+          transform: translateY(-1px) scale(1.05);
+          background: darken(#ff4e4e, 5%);
+          box-shadow: 0px 10px 30px rgba(255, 78, 78, 0.2);
+        }
+      }
+    }
+
+    .may-img {
+      grid-column: 2/3;
+      grid-row: 1/5;
+
+      @media (max-width: 992px) {
+        grid-row: 2/3;
+        grid-column: 1/2;
+
+        img {
+          display: block;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
