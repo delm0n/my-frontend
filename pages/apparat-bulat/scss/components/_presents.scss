@@ -1,0 +1,73 @@
+#kompekt {
+  #presents {
+    font-size: 0;
+    line-height: 0;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: space-evenly;
+    row-gap: 30px;
+    gap: 20px;
+    align-items: stretch;
+
+    @media (max-width: 1279px) {
+      grid-template-columns: repeat(3, 1fr);
+      row-gap: 80px;
+    }
+
+    @media (max-width: 767px) {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 60px;
+    }
+
+    @media (max-width: 375px) {
+      column-gap: 10px;
+    }
+
+    .present {
+      display: flex;
+      position: relative;
+
+      .img-container {
+        display: flex;
+      align-items: center;
+      justify-content: center;
+        background: #fff;
+        width: 0;
+        flex: 1 1 0;
+        box-shadow: 0 0 5px #e0e0e0;
+
+        img {
+          padding: 15px 0;
+          display: inline-block;
+        }
+      }
+
+      p {
+        font-family: Gilroy-Bold, Arial, sans-serif;
+        font-size: 16px;
+        line-height: 18px;
+        color: #000;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-top: 20px;
+        position: absolute;
+        bottom: -20px;
+        width: 100%;
+        left: 50%;
+        margin: 0;
+        transform: translateY(100%) translateX(-50%);
+      }
+    }
+
+    @media (max-width: 479px) {
+      .present {
+        p {
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,152 @@
+#steps {
+	position: relative;
+
+    .columns{
+        margin-bottom: -25px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .step {
+            position: relative;
+            display: block;
+            width: 32%;
+            max-width: 370px;
+            margin: 0 2% 25px 0;
+            overflow: hidden;
+
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+
+            .img-container {
+                position: relative;
+                z-index: 5;
+
+                img{
+                    width: 100%;
+                }
+
+                &:after{
+                    content: 'Для крышек твист-офф индивидуальные зажимы не нужны';
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    background: transparent;
+                    color: transparent;
+                    z-index: 10;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                }
+
+                &.opened{
+                    &:after{
+                        background: #fff;
+                        color: #000;
+                    }
+                }
+            }
+
+            .num {
+                position: absolute;
+                left: 0;
+                top: 0;
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                font-family: Gilroy-Black,Arial,sans-serif;
+                font-size: 30px;
+                line-height: 38px;
+                color: #fff;
+                text-align: center;
+                background: rgba(255, 192, 44, .8);
+                z-index: 10;
+            }
+
+            p {
+                font-family: Gilroy-Bold,Arial,sans-serif;
+                font-size: 18px;
+                line-height: 20px;
+                color: #000;
+                width: 100%;
+                text-align: center;
+
+                span {
+                    position: relative;
+                    background: #ffc02c;
+                    padding: 5px 30px;
+                    width: 100%;
+                    min-height: 65px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    :first-child {
+                        min-width: 170px;
+                        padding: 5px;
+                    }
+
+                    i{
+                        position: absolute;
+                        right: -68px;
+                        bottom: 0;
+                        font-size: 20px;
+                        color: #444;
+                        cursor: pointer;
+
+                        &:hover{
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 979px){
+        .columns .step,
+        .columns .step:nth-child(3n) {
+            width: 48%;
+            margin: 0 4% 50px 0;
+        }
+
+        .columns .step:nth-child(2n) {
+            margin-right: 0;
+        }
+    }
+
+    @media (max-width: 767px){
+        .columns{
+            margin-bottom: 0;
+        }
+
+        .columns .step,
+        .columns .step:nth-child(2n),
+        .columns .step:nth-child(3n) {
+            float: none;
+            width: 100%;
+            margin: 0 auto 25px;
+        }
+
+        .columns .step:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    @media (max-width: 479px){
+        .columns{
+            .step p{
+                font-size: 18px;
+                line-height: 20px;
+            }
+
+            span:first-child {
+                min-width: 0;
+            }
+        }
+    }
+}

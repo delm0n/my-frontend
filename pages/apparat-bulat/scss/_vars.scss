@@ -1,0 +1,106 @@
+$hoverInput: rgba(238, 238, 238, 0.65);
+
+.content-container-test {
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  max-width: 1524px;
+  @media (max-width: 1554px) {
+    max-width: 1170px;
+  }
+
+  @media (max-width: 1240px) {
+    max-width: 1000px;
+  }
+
+  @media (max-width: 1023px) {
+    max-width: 750px;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
+.content-container-test_menu {
+  max-width: 100%;
+  min-height: 108px;
+}
+.header-fixed-nav {
+  background: white;
+  position: fixed;
+  width: 100%;
+  z-index: 101;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.header-hide__wrapper {
+  max-width: 1524px;
+  margin: 0 auto;
+}
+
+.btn-test {
+  width: 241px;
+  height: 49px;
+  box-shadow: 0px 20px 30px rgba(190, 23, 4, 0.19);
+  border-radius: 20px;
+  text-align: center;
+  padding: 14px 0;
+  display: block;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  border: none;
+  cursor: pointer;
+
+  &_red {
+    background: #be1704;
+    color: #fff;
+    transition: 0.5s;
+
+    &:hover {
+      background: darken(#be1704, 5%);
+    }
+  }
+
+  &_yellow {
+    background: #f6fb00;
+    color: #1c1c1c;
+    transition: 0.5s;
+
+    &:hover {
+      background: darken(#f6fb00, 5%);
+    }
+  }
+
+  &_unactive {
+    background: #353535;
+    color: #fff;
+    box-shadow: 0px 20px 30px rgba(47, 47, 47, 0.19);
+
+    &:hover {
+      background: darken(#353535, 5%);
+    }
+  }
+}
+
+.inputs-new {
+  background: #fbfbfb;
+  border: 1px solid #bbbbbb;
+  border-radius: 5px;
+  font-family: "Gilroy";
+  padding: 16px;
+  transition: 0.2s all;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.47);
+
+  &:hover {
+    background: $hoverInput;
+  }
+
+  &:focus-visible {
+    outline: 0;
+    border: 1px solid #bbbbbb;
+  }
+}

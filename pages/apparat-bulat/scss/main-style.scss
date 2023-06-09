@@ -1,0 +1,31 @@
+@import "./fonts-2";
+@import "./components/old-styles";
+
+@import "./vars";
+
+@import "./components/header";
+@import "./components/cart";
+
+body.fancybox-active {
+  overflow: hidden;
+}
+@import "./components/season";
+@import "./components/zakat.scss";
+@import "./components/steps";
+@import "./components/proizvoditel";
+// @import "./components/delivery";
+@import "./components/present";
+@import "./components/presents"; // #kompekt #presents
+
+@import "./components/clamps";
+// @import "./components/tinkoff-block";
+@import "./components/equipment";
+@import "./components/review";
+@import "./components/instruction-video";
+@import "./components/video-dish";
+@import "./components/promocode";
+// @import "./components/other-products-v2";
+@import "./components/compare-v3";
+@import "./components/tby-bulat";
+
+@import "./components/present-banner";

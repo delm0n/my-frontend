@@ -1,0 +1,162 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1230px,
+);
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1170px,
+);
+
+/* Переменные */
+$ptb90: 90px 0;
+$p90: 90px;
+
+$ptb70: 70px 0;
+$p70: 70px;
+
+$ptb50: 50px 0;
+$p50: 50px;
+
+$text_color: #303035;
+$text_color_085: rgba(48, 48, 53, 0.85);
+
+/* Стили отступов между блоками */
+.ptb {
+  padding: $ptb90;
+
+  @media (max-width: 767.98px) {
+    padding: $ptb70;
+  }
+
+  @media (max-width: 575.98px) {
+    padding: $ptb50;
+  }
+}
+.pb {
+  padding-bottom: $p90;
+
+  @media (max-width: 767.98px) {
+    padding-bottom: $p70;
+  }
+
+  @media (max-width: 575.98px) {
+    padding-bottom: $p50;
+  }
+}
+
+body {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 35px;
+  color: $text_color;
+  overflow-x: hidden;
+
+  @media (max-width: 575.98px) {
+    font-size: 15px;
+    line-height: 25px;
+    color: #000;
+    background: url(../images/gradient-1_3.jpg) no-repeat center top;
+    background-size: contain;
+  }
+}
+
+input:not([type="submit"]) {
+  background: #ffffff;
+  border: 1px solid #b1bca4;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-family: "Montserrat-Light";
+  font-size: 15px;
+  line-height: 35px;
+  font-family: "Montserrat-Light", sans-serif;
+}
+
+.fw300 {
+  font-family: "Montserrat-Light";
+}
+
+%btn-test {
+  background: #ea7359;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  display: block;
+  width: 227px;
+  text-align: center;
+  padding: 19px 0;
+  transition: all 0.4s;
+
+  &:hover {
+    background: darken(#ea7359, 5%);
+    transform: scale(1.05);
+  }
+}
+
+.btn {
+  background: #fde0a9;
+  font-family: "Montserrat-SemiBold";
+  font-size: 20px;
+  font-style: normal;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $text_color;
+  padding: 20px 44px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 4px 4px 0px #e3dac1;
+  transition-duration: 0.2s;
+  -webkit-appearance: none;
+
+  @media (max-width: 575.98px) {
+    font-size: 13px;
+    line-height: 13px;
+    padding: 10px 22px;
+  }
+
+  &_small {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  &:hover {
+    color: $text_color_085;
+    box-shadow: 2px 2px 2px rgba(48, 48, 53, 0.15);
+  }
+}
+
+.title {
+  font-style: normal;
+  font-family: "Montserrat-ExtraBold";
+  font-size: 35px;
+  line-height: 50px;
+  text-align: center;
+  margin: 0 auto 20px;
+  color: $text_color;
+  z-index: 1;
+
+  @media (max-width: 575.98px) {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 auto 10px;
+  }
+
+  &_left {
+    text-align: left;
+  }
+}

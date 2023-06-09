@@ -1,0 +1,41 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "vue": "^2.7.14"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^8.2.3",
+    "bootstrap": "^4.6.0",
+    "cssnano": "^4.1.10",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-modify-css-urls": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^1.4.0",
+    "gulp-webp": "^4.0.1",
+    "imagemin-pngquant": "^9.0.2",
+    "sass": "^1.32.8",
+    "webpack": "^5.75.0",
+    "webpack-stream": "^7.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "sass --watch scss/main-style.scss:styles/main-style.css"
+  },
+  "browserslist": [
+    "last 2 versions",
+    ">0.3%"
+  ],
+  "author": "Eugene Suloev",
+  "license": "ISC"
+}

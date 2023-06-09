@@ -1,0 +1,93 @@
+
+#proizvoditel {
+	background-color: #1f1e20;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+
+    .columns{
+        .info-block{
+            width: 51%;
+
+            p.title{
+                font-family: Gilroy-Extrabold,Arial,sans-serif;
+                font-size: 30px;
+                line-height: 40px;
+                color: #fff;
+                text-align: left;
+
+                 span {
+                    display: block;
+
+                     &.yellow {
+                        display: inline;
+                        color: #ffc02c;
+                    }
+                }
+            }
+
+            ul {
+                display: inline-block;
+                width: 100%;
+                margin: 25px 0 0;
+
+                li {
+                    min-height: 37px;
+                    font-family: inherit;
+                    font-size: 20px;
+                    line-height: 26px;
+                    color: #fff;
+                    margin: 0 0 25px;
+                    text-align: left;
+
+                    &:before{
+                        content: '\f00c';
+                        font-family: fontawesome!important;
+                        font-size: 20px;
+                        color: $color-main;
+                        margin-right: 15px;
+                    }
+
+                    &:last-child{
+                        margin: 0;
+                    }
+
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1279px){
+        .columns{
+            .info-block{
+                width: 60%;
+            }
+        }
+    }
+
+    @media (max-width: 979px){
+        .columns{
+            .info-block{
+                float: none;
+		        width: 100%;
+            }
+        }
+    }
+
+    @media (max-width: 479px){
+        .columns .info-block{
+            ul li{
+                font-size: 18px;
+                line-height: 22px;
+            }
+
+            p.title{
+                font-size: 24px;
+                line-height: 26px;
+            }
+        }
+    }
+}
