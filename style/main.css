@@ -127,11 +127,12 @@ a {
 }
 .container .item .decr .content-container {
   position: relative;
-  width: 100%;
+  padding: 0 10px;
   height: 100%;
 }
 .container .item .decr .content {
   position: absolute;
+  left: 0;
   width: 100%;
   top: 50%;
   transform: translateY(-50%);
@@ -152,7 +153,8 @@ a {
 }
 .container .item img {
   transition: all 0.5s;
-  width: 100%;
+  height: 100%;
+  width: auto;
 }
 @media (max-width: 992px) {
   .container .item img {
