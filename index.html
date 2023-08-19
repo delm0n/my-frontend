@@ -11,274 +11,340 @@
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      as="fonts"
       rel="preload"
     />
 
-    <title>Портфолио</title>
+    <title>portfolio-landings</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script src="scripts/gsap.min.js"></script>
     <script src="scripts/ScrollTrigger.min.js"></script>
+    <script src="scripts/ScrollToPlugin.min.js"></script>
+
     <script src="scripts/smoothScroll.min.js"></script>
 
     <link rel="stylesheet" href="style/main.css" />
   </head>
   <body>
-    <p class="title">Многостраничные сайты на vue-router</p>
-
-    <div class="container">
-      <div class="item">
-        <div class="decr">
-          <div class="content-container">
-            <div class="content">
-              <p class="name">
-                Helicon, <br />
-                Вёрстка сайта, май&nbsp;2023
-              </p>
-              <a
-                class="button"
-                href="https://delm0n.github.io/burzhujka-vita-site/"
-                >Перейти</a
-              >
-              <a class="ref" target="_blank" href="https://burzhujka-vita.ru/"
-                >https://burzhujka-vita.ru/</a
-              >
-              <a
-                class="ref"
-                target="_blank"
-                href="https://github.com/delm0n/burzhujka-vita-site"
-                >https://github.com/delm0n/burzhujka-vita-site</a
-              >
-            </div>
-          </div>
-        </div>
-        <img src="images/vita.jpg" alt="vita" />
-      </div>
-
-      <div class="item">
-        <div class="decr">
-          <div class="content-container">
-            <div class="content">
-              <p class="name">
-                Helicon, <br />
-                Вёрстка сайта, август&nbsp;2023
-              </p>
-              <a
-                class="button"
-                href="https://delm0n.github.io/avtoklav-krestjanka-site/"
-                >Перейти</a
-              >
-              <a
-                class="ref"
-                target="_blank"
-                href="https://avtoklav-krestjanka.ru/"
-                >https://avtoklav-krestjanka.ru/</a
-              >
-              <a
-                class="ref"
-                target="_blank"
-                href="https://github.com/delm0n/avtoklav-krestjanka-site"
-                >https://github.com/delm0n/avtoklav-krestjanka-site</a
-              >
-            </div>
-          </div>
-        </div>
-        <img src="images/krestjanka.png" alt="krestjanka" />
-      </div>
+    <div class="cursor">
+      <div class="mini"></div>
     </div>
 
-    <p class="title">Лендинги на vue.js</p>
+    <main>
+      <aside>
+        <div class="aside-container">
+          <div class="aside-head">
+            <p onclick="scrollToSelector('#container-1')">
+              Многостраничные сайты
+            </p>
+            <p onclick="scrollToSelector('#container-2')">Лендинги (vue)</p>
+            <p onclick="scrollToSelector('#container-3')">Лендинги (js)</p>
+          </div>
 
-    <div class="container">
-      <div class="item">
-        <div class="decr">
-          <div class="content-container">
-            <div class="content">
-              <p class="name">
-                Helicon, <br />
-                Вёрстка сайта, февраль&nbsp;2023
-              </p>
-              <a
-                class="button"
-                href="https://delm0n.github.io/pivovarnya-bavaria-site/"
-                >Перейти</a
+          <div class="aside-bottom">
+            <a target="_blank" href="https://t.me/delm0n">
+              <p>Связь со мной</p>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns:serif="http://www.serif.com/"
+                width="24px"
+                height="24px"
+                version="1.1"
+                xml:space="preserve"
+                style="
+                  fill-rule: evenodd;
+                  clip-rule: evenodd;
+                  stroke-linejoin: round;
+                  stroke-miterlimit: 1.41421;
+                "
               >
-              <a
-                class="ref"
-                target="_blank"
-                href="https://pivovarnya-bavaria.ru/"
-                >https://pivovarnya-bavaria.ru/</a
-              >
-              <a
-                class="ref"
-                target="_blank"
-                href="https://github.com/delm0n/pivovarnya-bavaria-site"
-                >https://github.com/delm0n/pivovarnya-bavaria-site</a
-              >
-            </div>
+                <path
+                  id="telegram-1"
+                  d="M18.384,22.779c0.322,0.228 0.737,0.285 1.107,0.145c0.37,-0.141 0.642,-0.457 0.724,-0.84c0.869,-4.084 2.977,-14.421 3.768,-18.136c0.06,-0.28 -0.04,-0.571 -0.26,-0.758c-0.22,-0.187 -0.525,-0.241 -0.797,-0.14c-4.193,1.552 -17.106,6.397 -22.384,8.35c-0.335,0.124 -0.553,0.446 -0.542,0.799c0.012,0.354 0.25,0.661 0.593,0.764c2.367,0.708 5.474,1.693 5.474,1.693c0,0 1.452,4.385 2.209,6.615c0.095,0.28 0.314,0.5 0.603,0.576c0.288,0.075 0.596,-0.004 0.811,-0.207c1.216,-1.148 3.096,-2.923 3.096,-2.923c0,0 3.572,2.619 5.598,4.062Zm-11.01,-8.677l1.679,5.538l0.373,-3.507c0,0 6.487,-5.851 10.185,-9.186c0.108,-0.098 0.123,-0.262 0.033,-0.377c-0.089,-0.115 -0.253,-0.142 -0.376,-0.064c-4.286,2.737 -11.894,7.596 -11.894,7.596Z"
+                  fill="#fff"
+                />
+              </svg>
+            </a>
           </div>
         </div>
-        <img src="images/bavaria.jpg" alt="bavaria" />
-      </div>
+      </aside>
+      <div class="main">
+        <p class="title">Многостраничные сайты на vue-router</p>
 
-      <div class="item">
-        <div class="decr">
-          <div class="content-container">
-            <div class="content">
-              <p class="name">
-                Helicon, <br />
-                Вёрстка промостраницы, май&nbsp;2023
-              </p>
-              <a
-                class="button"
-                href="https://delm0n.github.io/mangal-firegrill-site/"
-                >Перейти</a
-              >
-              <a
-                class="ref"
-                target="_blank"
-                href="https://mangal-firegrill.ru/promo"
-                >https://mangal-firegrill.ru/promo</a
-              >
-              <a
-                class="ref"
-                target="_blank"
-                href="https://github.com/delm0n/mangal-firegrill-site"
-                >https://github.com/delm0n/mangal-firegrill-site</a
-              >
+        <div id="container-1" class="container">
+          <div class="item">
+            <div class="decr">
+              <div class="content-container">
+                <div class="content">
+                  <p class="name">
+                    Helicon, <br />
+                    Вёрстка сайта, май&nbsp;2023
+                  </p>
+                  <a
+                    class="button"
+                    href="https://delm0n.github.io/burzhujka-vita-site/"
+                    >Перейти</a
+                  >
+                  <a
+                    class="ref"
+                    target="_blank"
+                    href="https://burzhujka-vita.ru/"
+                    >https://burzhujka-vita.ru/</a
+                  >
+                  <a
+                    class="ref"
+                    target="_blank"
+                    href="https://github.com/delm0n/burzhujka-vita-site"
+                    >https://github.com/delm0n/burzhujka-vita-site</a
+                  >
+                </div>
+              </div>
             </div>
+            <img src="images/vita.jpg" alt="vita" />
+          </div>
+
+          <div class="item">
+            <div class="decr">
+              <div class="content-container">
+                <div class="content">
+                  <p class="name">
+                    Helicon, <br />
+                    Вёрстка сайта, август&nbsp;2023
+                  </p>
+                  <a
+                    class="button"
+                    href="https://delm0n.github.io/avtoklav-krestjanka-site/"
+                    >Перейти</a
+                  >
+                  <a
+                    class="ref"
+                    target="_blank"
+                    href="https://avtoklav-krestjanka.ru/"
+                    >https://avtoklav-krestjanka.ru/</a
+                  >
+                  <a
+                    class="ref"
+                    target="_blank"
+                    href="https://github.com/delm0n/avtoklav-krestjanka-site"
+                    >https://github.com/delm0n/avtoklav-krestjanka-site</a
+                  >
+                </div>
+              </div>
+            </div>
+            <img src="images/krestjanka.png" alt="krestjanka" />
           </div>
         </div>
-        <img src="images/mangal.png" alt="mangal" />
-      </div>
-    </div>
 
-    <p class="title">Лендинги и главные экраны на js и jquerry</p>
+        <p class="title">Лендинги на vue.js</p>
 
-    <div class="container">
-      <div class="item">
-        <div class="decr">
-          <div class="content-container">
-            <div class="content">
-              <p class="name">
-                Helicon, <br />
-                Доработка сайта, ноябрь&nbsp;2022
-              </p>
-              <a class="button" href="pages/stanok-bulat/stanok-bulat.html"
-                >Перейти</a
-              >
-              <a class="ref" target="_blank" href="https://stanok-bulat.ru/"
-                >https://stanok-bulat.ru/</a
-              >
+        <div id="container-2" class="container">
+          <div class="item">
+            <div class="decr">
+              <div class="content-container">
+                <div class="content">
+                  <p class="name">
+                    Helicon, <br />
+                    Вёрстка сайта, февраль&nbsp;2023
+                  </p>
+                  <a
+                    class="button"
+                    href="https://delm0n.github.io/pivovarnya-bavaria-site/"
+                    >Перейти</a
+                  >
+                  <a
+                    class="ref"
+                    target="_blank"
+                    href="https://pivovarnya-bavaria.ru/"
+                    >https://pivovarnya-bavaria.ru/</a
+                  >
+                  <a
+                    class="ref"
+                    target="_blank"
+                    href="https://github.com/delm0n/pivovarnya-bavaria-site"
+                    >https://github.com/delm0n/pivovarnya-bavaria-site</a
+                  >
+                </div>
+              </div>
             </div>
+            <img src="images/bavaria.jpg" alt="bavaria" />
+          </div>
+
+          <div class="item">
+            <div class="decr">
+              <div class="content-container">
+                <div class="content">
+                  <p class="name">
+                    Helicon, <br />
+                    Вёрстка промостраницы, май&nbsp;2023
+                  </p>
+                  <a
+                    class="button"
+                    href="https://delm0n.github.io/mangal-firegrill-site/"
+                    >Перейти</a
+                  >
+                  <a
+                    class="ref"
+                    target="_blank"
+                    href="https://mangal-firegrill.ru/promo"
+                    >https://mangal-firegrill.ru/promo</a
+                  >
+                  <a
+                    class="ref"
+                    target="_blank"
+                    href="https://github.com/delm0n/mangal-firegrill-site"
+                    >https://github.com/delm0n/mangal-firegrill-site</a
+                  >
+                </div>
+              </div>
+            </div>
+            <img src="images/mangal.png" alt="mangal" />
           </div>
         </div>
-        <img src="images/stanok.png" alt="stanok" />
-      </div>
 
-      <div class="item">
-        <div class="decr">
-          <div class="content-container">
-            <div class="content">
-              <p class="name">
-                Helicon,<br />
-                Доработка сайта, ноябрь&nbsp;2022,<br />
-                Функционал корзины, март&nbsp;2023
-              </p>
-              <a class="button" href="pages/apparat-bulat/apparat-bulat.html"
-                >Перейти</a
-              >
-              <a class="ref" target="_blank" href="https://apparat-bulat.ru/"
-                >https://apparat-bulat.ru/</a
-              >
+        <p class="title">Лендинги и главные экраны на js и jquerry</p>
+
+        <div id="container-3" class="container">
+          <div class="item">
+            <div class="decr">
+              <div class="content-container">
+                <div class="content">
+                  <p class="name">
+                    Helicon, <br />
+                    Доработка сайта, ноябрь&nbsp;2022
+                  </p>
+                  <a class="button" href="pages/stanok-bulat/stanok-bulat.html"
+                    >Перейти</a
+                  >
+                  <a class="ref" target="_blank" href="https://stanok-bulat.ru/"
+                    >https://stanok-bulat.ru/</a
+                  >
+                </div>
+              </div>
             </div>
+            <img src="images/stanok.png" alt="stanok" />
+          </div>
+
+          <div class="item">
+            <div class="decr">
+              <div class="content-container">
+                <div class="content">
+                  <p class="name">
+                    Helicon,<br />
+                    Доработка сайта, ноябрь&nbsp;2022,<br />
+                    Функционал корзины, март&nbsp;2023
+                  </p>
+                  <a
+                    class="button"
+                    href="pages/apparat-bulat/apparat-bulat.html"
+                    >Перейти</a
+                  >
+                  <a
+                    class="ref"
+                    target="_blank"
+                    href="https://apparat-bulat.ru/"
+                    >https://apparat-bulat.ru/</a
+                  >
+                </div>
+              </div>
+            </div>
+            <img src="images/bulat.jpg" alt="bulat" />
+          </div>
+
+          <div class="item">
+            <div class="decr">
+              <div class="content-container">
+                <div class="content">
+                  <p class="name">
+                    Helicon, <br />
+                    Вёрстка главного экрана, февраль&nbsp;2023
+                  </p>
+                  <a
+                    class="button"
+                    href="pages/koptilnya-voron/koptilnya-voron.html"
+                    >Перейти</a
+                  >
+                  <a
+                    class="ref"
+                    target="_blank"
+                    href="https://koptilnya-voron.ru/"
+                    >https://koptilnya-voron.ru/</a
+                  >
+                </div>
+              </div>
+            </div>
+            <img src="images/voron.png" alt="voron" />
+          </div>
+
+          <div class="item">
+            <div class="decr">
+              <div class="content-container">
+                <div class="content">
+                  <p class="name">
+                    Helicon,<br />
+                    Вёрстка главного экрана, декабрь&nbsp;2022
+                  </p>
+                  <a class="button" href="pages/gidrolat-eva/gidrolat-eva.html"
+                    >Перейти</a
+                  >
+                  <a class="ref" target="_blank" href="https://gidrolat-eva.ru/"
+                    >https://gidrolat-eva.ru/</a
+                  >
+                </div>
+              </div>
+            </div>
+            <img src="images/gidrolat-eva.jpg" alt="gidrolat" />
+          </div>
+
+          <div class="item">
+            <div class="decr">
+              <div class="content-container">
+                <div class="content">
+                  <p class="name">
+                    Helicon,<br />
+                    Вёрстка главного экрана, декабрь&nbsp;2022
+                  </p>
+                  <a
+                    class="button"
+                    href="pages/grinder-udachniy/grinder-udachniy.html"
+                    >Перейти</a
+                  >
+                  <a
+                    class="ref"
+                    target="_blank"
+                    href="https://grinder-udachniy.ru/"
+                    >https://grinder-udachniy.ru/</a
+                  >
+                </div>
+              </div>
+            </div>
+            <img src="images/grinder.png" alt="grinder" />
+          </div>
+
+          <div class="item">
+            <div class="decr">
+              <div class="content-container">
+                <div class="content">
+                  <p class="name">
+                    ВЯТГУ, <br />
+                    Разработка дизайна и вёрстка сайта (Лабораторная работа),
+                    июль&nbsp;2021
+                  </p>
+                  <a
+                    class="button"
+                    href="pages/prokat-vyatgu/prokat-vyatgu.html"
+                    >Перейти</a
+                  >
+                </div>
+              </div>
+            </div>
+            <img src="images/prokat.png" alt="prokat" />
           </div>
         </div>
-        <img src="images/bulat.jpg" alt="bulat" />
       </div>
-
-      <div class="item">
-        <div class="decr">
-          <div class="content-container">
-            <div class="content">
-              <p class="name">
-                Helicon, <br />
-                Вёрстка главного экрана, февраль&nbsp;2023
-              </p>
-              <a
-                class="button"
-                href="pages/koptilnya-voron/koptilnya-voron.html"
-                >Перейти</a
-              >
-              <a class="ref" target="_blank" href="https://koptilnya-voron.ru/"
-                >https://koptilnya-voron.ru/</a
-              >
-            </div>
-          </div>
-        </div>
-        <img src="images/voron.png" alt="voron" />
-      </div>
-
-      <div class="item">
-        <div class="decr">
-          <div class="content-container">
-            <div class="content">
-              <p class="name">
-                Helicon,<br />
-                Вёрстка главного экрана, декабрь&nbsp;2022
-              </p>
-              <a class="button" href="pages/gidrolat-eva/gidrolat-eva.html"
-                >Перейти</a
-              >
-              <a class="ref" target="_blank" href="https://gidrolat-eva.ru/"
-                >https://gidrolat-eva.ru/</a
-              >
-            </div>
-          </div>
-        </div>
-        <img src="images/gidrolat-eva.jpg" alt="gidrolat" />
-      </div>
-
-      <div class="item">
-        <div class="decr">
-          <div class="content-container">
-            <div class="content">
-              <p class="name">
-                Helicon,<br />
-                Вёрстка главного экрана, декабрь&nbsp;2022
-              </p>
-              <a
-                class="button"
-                href="pages/grinder-udachniy/grinder-udachniy.html"
-                >Перейти</a
-              >
-              <a class="ref" target="_blank" href="https://grinder-udachniy.ru/"
-                >https://grinder-udachniy.ru/</a
-              >
-            </div>
-          </div>
-        </div>
-        <img src="images/grinder.png" alt="grinder" />
-      </div>
-
-      <div class="item">
-        <div class="decr">
-          <div class="content-container">
-            <div class="content">
-              <p class="name">
-                ВЯТГУ, <br />
-                Разработка дизайна и вёрстка сайта (Лабораторная работа),
-                июль&nbsp;2021
-              </p>
-              <a class="button" href="pages/prokat-vyatgu/prokat-vyatgu.html"
-                >Перейти</a
-              >
-            </div>
-          </div>
-        </div>
-        <img src="images/prokat.png" alt="prokat" />
-      </div>
-    </div>
+    </main>
   </body>
   <script src="scripts/script.js"></script>
 </html>
