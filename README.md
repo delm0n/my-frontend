@@ -1,1 +1,1 @@
-https://delm0n.github.io/portfolio-landings/
+https://delm0n.github.io/my-frontend/
