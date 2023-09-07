@@ -1,23 +1,25 @@
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
-["#container-1", "#container-2", "#container-3"].forEach((element) => {
-  ScrollTrigger.create({
-    trigger: element,
-    once: true,
-    onEnter: () => {
-      gsap.fromTo(
-        element + " .item",
-        { opacity: 0, y: 50 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 1,
-          stagger: 0.35,
-        }
-      );
-    },
-  });
-});
+["#container-1", "#container-2", "#container-3", "#container-4"].forEach(
+  (element) => {
+    ScrollTrigger.create({
+      trigger: element,
+      once: true,
+      onEnter: () => {
+        gsap.fromTo(
+          element + " .item",
+          { opacity: 0, y: 50 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            stagger: 0.35,
+          }
+        );
+      },
+    });
+  }
+);
 
 let posX = 0,
   posY = 0;
