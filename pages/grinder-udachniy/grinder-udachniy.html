@@ -7,7 +7,9 @@
     <title>grinder-udachniy</title>
     <link rel="stylesheet" href="./css/main.css" />
   </head>
-  <body>
+  <body
+    data-goods='{"481568":{"name":"\u0413\u0440\u0438\u043d\u0434\u0435\u0440 \u0443\u0414\u0430\u0447\u043d\u044b\u0439","oldPrice":26138,"price":16990,"oldPriceF":"26 138","priceF":"16 990","image":"","discount":0},"481436":{"name":"\u041c\u0430\u0433\u043d\u0438\u0442\u043d\u044b\u0439 \u0443\u0433\u043e\u043b 23 \u043a\u0433","oldPrice":1390,"price":990,"oldPriceF":"1 390","priceF":"990","image":"https:\/\/apispn.ru\/apiImage\/2902\/ugol.jpg","discount":0},"481618":{"name":"\u041d\u0430\u0431\u043e\u0440 \u043b\u0435\u043d\u0442 610 \u043c\u043c (\u0423\u0434\u0430\u0447\u043d\u044b\u0439) PRO","oldPrice":900,"price":790,"oldPriceF":"900","priceF":"790","image":"https:\/\/apispn.ru\/apiImage\/3080\/lenta21.png","discount":0},"481617":{"name":"\u041d\u0430\u0431\u043e\u0440 \u043b\u0435\u043d\u0442 610 \u043c\u043c (\u0423\u0434\u0430\u0447\u043d\u044b\u0439)","oldPrice":890,"price":690,"oldPriceF":"890","priceF":"690","image":"https:\/\/apispn.ru\/apiImage\/3071\/lenta-min.png","discount":0},"482732":{"name":"\u0423\u0433\u043b\u043e\u043c\u0435\u0440 \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u043d\u043d\u044b\u0439","oldPrice":1990,"price":1490,"oldPriceF":"1 990","priceF":"1 490","image":"","discount":0},"482782":{"name":"\u041b\u0435\u043d\u0442\u0430 \u043f\u043e\u043b\u0438\u0440\u043e\u0432\u0430\u043b\u044c\u043d\u0430\u044f \u0432\u043e\u0439\u043b\u043e\u0447\u043d\u0430\u044f \u043a \u0423\u0434\u0430\u0447\u043d\u043e\u043c\u0443 (50*610)","oldPrice":1990,"price":1490,"oldPriceF":"1 990","priceF":"1 490","image":"","discount":0},"482783":{"name":"\u041b\u0435\u043d\u0442\u0430 \u043f\u043e\u043b\u0438\u0440\u043e\u0432\u0430\u043b\u044c\u043d\u0430\u044f \u0432\u043e\u0439\u043b\u043e\u0447\u043d\u0430\u044f \u043a \u0421\u043f\u0443\u0442\u043d\u0438\u043a\u0443  (50\u0445915)","oldPrice":2890,"price":2230,"oldPriceF":"2 890","priceF":"2 230","image":"","discount":0},"482839":{"name":"\u0427\u0438\u0441\u0442\u044f\u0449\u0438\u0439 \u043a\u0430\u0440\u0430\u043d\u0434\u0430\u0448 \u0434\u043b\u044f \u0430\u0431\u0440\u0430\u0437\u0438\u0432\u043d\u044b\u0445 \u043a\u0440\u0443\u0433\u043e\u0432","oldPrice":1190,"price":990,"oldPriceF":"1 190","priceF":"990","image":"","discount":0},"483195":{"name":"\u0413\u0440\u0438\u043d\u0434\u0435\u0440 \u0423\u0434\u0430\u0447\u043d\u044b\u0439 NEW \u0441 \u0440\u0435\u0433\u0443\u043b\u0438\u0440\u0443\u0435\u043c\u044b\u043c \u0443\u043f\u043e\u0440\u043e\u043c","oldPrice":31800,"price":17490,"oldPriceF":"31 800","priceF":"17 490","image":"","discount":0}}'
+  >
     <header>
       <div id="header-top-test" class="header-top-test">
         <div class="container">
@@ -295,7 +297,7 @@
       </div>
     </header>
 
-    <div id="may-banner">
+    <section id="may-banner">
       <div class="may-container">
         <div class="may-wrapper">
           <div class="may-timer">
@@ -368,7 +370,19 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <section id="stol" class="new-def">
+      <stol></stol>
+    </section>
+
+    <section id="things" class="new-def">
+      <things></things>
+    </section>
+
+    <section id="product-photo" class="new-def">
+      <photo></photo>
+    </section>
 
     <script>
       const deadline = new Date();
@@ -395,6 +409,24 @@
       }
       countdownTimer();
       timerId = setInterval(countdownTimer, 1000);
+
+      var goodsJson = JSON.parse(document.body.getAttribute("data-goods"));
+      var webp = "<?= $webp ?>";
+
+      var testVersion = false;
+
+      var goods = {
+        grinder: 481568,
+        grinder_plus: 483195,
+        ugol: 481436,
+        lenta_dop: 481617,
+        goniometer: 482732,
+        dop_pencil: 482839,
+      };
     </script>
+
+    <!-- vue -->
+    <script src="vue/main.js"></script>
+    <!-- vue -->
   </body>
 </html>

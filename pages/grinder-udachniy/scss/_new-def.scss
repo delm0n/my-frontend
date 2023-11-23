@@ -1,0 +1,31 @@
+.new-def {
+  @import "../node_modules/swiper/swiper.scss";
+  @import "../node_modules/swiper/modules/pagination/pagination.scss";
+
+  * {
+    box-sizing: border-box;
+  }
+
+  picture {
+    display: flex;
+  }
+}
+
+@function calcFluidFontSize($f-min, $f-max, $v-min, $v-max) {
+  $k: calc(($f-max - $f-min) / ($v-max - $v-min));
+  $b: calc($f-min - $k * $v-min);
+  $b: $b * 1px;
+
+  @return calc(#{$k} * 100vw + #{$b});
+}
+
+@mixin fluidFontSize($f-min, $f-max, $w-min, $w-max) {
+  $units: px;
+  font-size: calcFluidFontSize($f-min, $f-max, $w-min, $w-max);
+  @media (min-width: (($w-max + 1) + $units)) {
+    font-size: $f-max + $units;
+  }
+  @media (max-width: ($w-min + $units)) {
+    font-size: $f-min + $units;
+  }
+}

@@ -2382,7 +2382,7 @@ p.subtitle {
     margin: 0;
   }
   #attention .columns .column,
-  #attention .columns .column:first-child {
+#attention .columns .column:first-child {
     display: inline-block;
     float: none;
     width: 100%;
@@ -3349,7 +3349,7 @@ p.subtitle {
 }
 @media (max-width: 767px) {
   #dop .dop-desc,
-  #dop .img-container {
+#dop .img-container {
     width: 100%;
     float: none;
     padding: 0;
@@ -4513,7 +4513,7 @@ p.subtitle {
 }
 @media (max-width: 767px) {
   .gallery__wrapper a,
-  .gallery__wrapper div {
+.gallery__wrapper div {
     padding: 1px;
   }
   .gallery__wrapper a {
@@ -5194,7 +5194,7 @@ p.subtitle {
     font-size: 17px;
   }
   #page-new #header-main .columns.img:after,
-  #page-new #header-main .columns.webp:after {
+#page-new #header-main .columns.webp:after {
     left: -355px;
     width: 1275px;
     top: -20px;
@@ -5358,8 +5358,8 @@ p.subtitle {
     font-size: 60px;
   }
   h2,
-  h3,
-  p.title {
+h3,
+p.title {
     font-size: 44px;
     line-height: 44px;
     margin-top: 70px;
@@ -5421,7 +5421,7 @@ p.subtitle {
     font-size: 18px;
   }
   #page-new #header-main .columns.img:after,
-  #page-new #header-main .columns.webp:after {
+#page-new #header-main .columns.webp:after {
     width: 1170px;
     height: 585px;
     left: -370px;
@@ -5500,7 +5500,7 @@ p.subtitle {
     right: 327px;
   }
   .order-section .form-container .custom-select,
-  .order-section .form-container form input {
+.order-section .form-container form input {
     width: 50%;
     float: none;
     margin: 8px auto;
@@ -5564,8 +5564,8 @@ p.subtitle {
     margin: 40px 0 10px;
   }
   h2,
-  h3,
-  p.title {
+h3,
+p.title {
     font-size: 35px;
     line-height: 37px;
     margin-top: 50px;
@@ -5629,7 +5629,7 @@ p.subtitle {
     margin: 3px 0;
   }
   .phone-block a.phone,
-  .phone-block p {
+.phone-block p {
     color: #fff;
   }
   #header-main {
@@ -5655,7 +5655,7 @@ p.subtitle {
     background: 0 0;
   }
   #page-new #header-main .columns.img:after,
-  #page-new #header-main .columns.webp:after {
+#page-new #header-main .columns.webp:after {
     background-image: none;
   }
   #page-new #header-main .columns .header-list {
@@ -5697,7 +5697,7 @@ p.subtitle {
     text-align: center;
   }
   #instruction .columns .img-container,
-  #instruction .columns ul {
+#instruction .columns ul {
     float: none;
     width: 100%;
   }
@@ -5818,7 +5818,7 @@ p.subtitle {
     text-align: left;
   }
   .order-section .form-container .custom-select,
-  .order-section .form-container form input {
+.order-section .form-container form input {
     width: 70%;
     float: none;
     margin: 8px auto;
@@ -5833,8 +5833,8 @@ p.subtitle {
     width: 100%;
   }
   #compare .columns .compare-column ul li,
-  #compare .columns .compare-column ul li.br,
-  #compare .columns .compare-column ul li.br2 {
+#compare .columns .compare-column ul li.br,
+#compare .columns .compare-column ul li.br2 {
     margin: 0 0 10px;
   }
   #compare .columns .compare-column p.note {
@@ -5900,8 +5900,8 @@ p.subtitle {
     width: 100%;
   }
   #feedback .banner-container.feedback-item,
-  #feedback .winner.feedback-item,
-  #feedback .winner.feedback-item > div {
+#feedback .winner.feedback-item,
+#feedback .winner.feedback-item > div {
     display: block;
   }
   #feedback .feedback-item.winner {
@@ -5914,7 +5914,7 @@ p.subtitle {
     float: none;
   }
   #feedback .feedback-item .feedback-photo-block,
-  #feedback .feedback-item .feedback-photo-desc {
+#feedback .feedback-item .feedback-photo-desc {
     width: 100%;
   }
   #feedback .feedback-photo-block .img-container {
@@ -6027,8 +6027,8 @@ p.subtitle {
     margin: 40px 0 10px;
   }
   h2,
-  h3,
-  p.title {
+h3,
+p.title {
     font-size: 24px;
     line-height: 26px;
     margin-top: 30px;
@@ -6147,7 +6147,7 @@ p.subtitle {
     border-width: 5px;
   }
   .form-container form,
-  .form-popup .columns .form-container form {
+.form-popup .columns .form-container form {
     width: 100%;
   }
   .form-container .custom-select .selectBox {
@@ -6173,7 +6173,7 @@ p.subtitle {
     margin: 0 0 10px;
   }
   .form-container p.new-price,
-  .form-container p.old-price {
+.form-container p.old-price {
     text-align: center;
     width: 100%;
   }
@@ -6211,7 +6211,7 @@ p.subtitle {
     margin: 30px 0 0;
   }
   #instruction .columns .img-container,
-  #instruction .columns ul {
+#instruction .columns ul {
     float: none;
     width: 100%;
   }
@@ -6334,7 +6334,7 @@ p.subtitle {
     margin-top: 50px;
   }
   .order-section .form-container .custom-select,
-  .order-section .form-container form input {
+.order-section .form-container form input {
     width: 96%;
     float: none;
     margin: 8px auto;
@@ -6349,8 +6349,8 @@ p.subtitle {
     width: 100%;
   }
   #compare .columns .compare-column ul li,
-  #compare .columns .compare-column ul li.br,
-  #compare .columns .compare-column ul li.br2 {
+#compare .columns .compare-column ul li.br,
+#compare .columns .compare-column ul li.br2 {
     margin: 0 0 10px;
   }
   #compare .columns .compare-column p.note {
@@ -6369,7 +6369,7 @@ p.subtitle {
     overflow: hidden;
   }
   #page-new #header-main .columns.img:after,
-  #page-new #header-main .columns.webp:after {
+#page-new #header-main .columns.webp:after {
     background-image: none;
     display: none;
   }
@@ -6439,7 +6439,7 @@ p.subtitle {
     background-image: url(../images/bg-discount.png);
   }
   #sale .columns .info-block #timer-block p#timer-subtitle,
-  #sale .columns .info-block #timer-block p#timer-title {
+#sale .columns .info-block #timer-block p#timer-title {
     font-size: 20px;
     line-height: 20px;
     margin: 0 0 15px;
@@ -6475,7 +6475,7 @@ p.subtitle {
     line-height: 20px;
   }
   #feedback .feedback-item .columns.feedback-photo .img-container,
-  #feedback .feedback-item .columns.feedback-photo .img-container:nth-child(2n) {
+#feedback .feedback-item .columns.feedback-photo .img-container:nth-child(2n) {
     float: none;
     width: 100%;
     margin: 0 0 5px;
@@ -6496,15 +6496,15 @@ p.subtitle {
     width: 100%;
   }
   #feedback .banner-container.feedback-item,
-  #feedback .winner.feedback-item,
-  #feedback .winner.feedback-item > div {
+#feedback .winner.feedback-item,
+#feedback .winner.feedback-item > div {
     display: block;
   }
   #feedback .feedback-item.winner {
     padding: 10px 10px 20px;
   }
   #feedback .feedback-item .feedback-photo-block,
-  #feedback .feedback-item .feedback-photo-desc {
+#feedback .feedback-item .feedback-photo-desc {
     width: 100%;
   }
   #feedback .feedback-photo-block .img-container {
@@ -6513,7 +6513,7 @@ p.subtitle {
     float: none;
   }
   #feedback .feedback-item .feedback-photo-block .img-container:nth-child(1) img,
-  #feedback .feedback-item:nth-child(3) .columns.feedback-photo .img-container:nth-child(1) img {
+#feedback .feedback-item:nth-child(3) .columns.feedback-photo .img-container:nth-child(1) img {
     margin: 0 0 20px;
   }
   #feedback .feedback-item .feedback-photo-block .img-container:nth-child(2) img {
@@ -6657,7 +6657,7 @@ p.subtitle {
 }
 @media (max-width: 479px) {
   #page-new .slick-prev,
-  #page-new .slick-next {
+#page-new .slick-next {
     bottom: -52px;
   }
 }
@@ -7893,7 +7893,7 @@ a[href="#callme"] {
   gap: 15px;
 }
 .header-block-new .button-test {
-  font-family: "Mont-SemiBold" !important;
+  font-family: "Gilroy" !important;
   font-style: normal !important;
   font-weight: 600 !important;
   font-size: 14px !important;
@@ -7933,7 +7933,7 @@ a[href="#callme"] {
   display: none;
 }
 .header-block-new .header-hide__phone__test {
-  font-family: "Mont-SemiBold";
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 600;
   font-size: 19px;
@@ -7955,7 +7955,7 @@ a[href="#callme"] {
   /* justify-content: space-between */
 }
 .header-block-new .phone_container__text div {
-  font-family: "Mont";
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 600;
   font-size: 11px;
@@ -8337,7 +8337,7 @@ a[href="#callme"] {
     text-align: center;
   }
   .header-block-new .red-left,
-  .header-block-new .red-right {
+.header-block-new .red-right {
     /* position: absolute; */
     top: 61px;
     /* z-index: 4; */
@@ -8460,13 +8460,13 @@ a[href="#callme"] {
 }
 @media (max-width: 425px) {
   .header-block-new .old_new_prices,
-  .header-block-new .price__text {
+.header-block-new .price__text {
     width: 100%;
     text-align: center;
     margin-top: 15px;
   }
   .header-block-new .old_new_prices img,
-  .header-block-new .price__text img {
+.header-block-new .price__text img {
     margin: 0 auto;
     display: block;
   }
@@ -8801,7 +8801,7 @@ a[href="#callme"] {
 }
 @media (max-width: 479px) {
   #cart-modal .main-model__controls-value .decr-controls,
-  #cart-modal .main-model__controls-value .incr-controls {
+#cart-modal .main-model__controls-value .incr-controls {
     height: 24px;
   }
 }
@@ -8825,7 +8825,7 @@ a[href="#callme"] {
 }
 @media (max-width: 479px) {
   #cart-modal .main-model__controls-value .decr-controls svg,
-  #cart-modal .main-model__controls-value .incr-controls svg {
+#cart-modal .main-model__controls-value .incr-controls svg {
     width: 24px;
     height: 24px;
   }
@@ -9459,7 +9459,7 @@ p.season__title {
     padding-left: 10px;
   }
   .zakat__decription div,
-  .zakat__decription ul {
+.zakat__decription ul {
     font-size: 18px;
   }
   .img-mobile__block img {
@@ -9566,7 +9566,7 @@ p.season__title {
 }
 @media (max-width: 979px) {
   #steps .columns .step,
-  #steps .columns .step:nth-child(3n) {
+#steps .columns .step:nth-child(3n) {
     width: 48%;
     margin: 0 4% 50px 0;
   }
@@ -9579,8 +9579,8 @@ p.season__title {
     margin-bottom: 0;
   }
   #steps .columns .step,
-  #steps .columns .step:nth-child(2n),
-  #steps .columns .step:nth-child(3n) {
+#steps .columns .step:nth-child(2n),
+#steps .columns .step:nth-child(3n) {
     float: none;
     width: 100%;
     margin: 0 auto 25px;
@@ -9783,7 +9783,7 @@ p.season__title {
     flex-direction: column;
   }
   #present .img-container,
-  #present .text {
+#present .text {
     float: none;
     width: 100%;
   }
@@ -9814,7 +9814,7 @@ p.season__title {
     right: 0;
   }
   #present .text p,
-  #present .text li {
+#present .text li {
     font-size: 17px;
     line-height: 20px;
   }

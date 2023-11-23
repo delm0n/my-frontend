@@ -1,0 +1,240 @@
+#models {
+  .container-models {
+    max-width: calc(1400px + 10px * 2);
+    width: 85%;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    @media (max-width: 992px) {
+      width: 90%;
+      max-width: 820px;
+    }
+
+    @media (max-width: 576px) {
+      padding: 0 20px;
+      width: 100%;
+    }
+  }
+
+  @mixin aspect() {
+    img:not(.loaded) {
+      width: 100%;
+
+      @content;
+    }
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  picture {
+    display: flex;
+    justify-content: center;
+  }
+
+  overflow: hidden;
+  padding: 100px 0;
+
+  @media (max-width: 1280px) {
+    padding: 80px 0;
+  }
+
+  @media (max-width: 992px) {
+    padding: 50px 0;
+  }
+
+  @media (max-width: 576px) {
+    padding: 30px 0;
+  }
+
+  .button {
+    cursor: pointer;
+    max-width: 285px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    border: none;
+    transition: all 0.3s;
+    white-space: nowrap;
+    color: #fff;
+    text-align: center;
+    font-family: "Inter";
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 20px 10px;
+    box-shadow: 0px 4px 14px 0px transparent;
+
+    border-radius: 55px;
+    background: #5a8a37;
+
+    &:hover,
+    &:active {
+      color: #2aa000;
+
+      background: #fff;
+      box-shadow: 0px 4px 14px 0px rgba(111, 111, 111, 0.15);
+    }
+
+    @media (max-width: 576px) {
+      font-size: 18px;
+      letter-spacing: 0.18px;
+    }
+  }
+
+  .model-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    align-items: start;
+
+    @media (max-width: 992px) {
+      grid-template-columns: 1fr;
+    }
+
+    .model-item {
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0px 4px 14px 0px rgba(111, 111, 111, 0.15);
+      padding: 50px 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      @media (max-width: 576px) {
+        padding: 20px 10px;
+      }
+
+      &__img {
+        picture {
+          justify-content: center;
+        }
+
+        @include aspect() {
+          max-width: 339px;
+          aspect-ratio: 1/1;
+        }
+      }
+
+      &__text {
+        border-top: 4px solid #e0e0e0;
+        border-bottom: 4px solid #e0e0e0;
+        padding: 20px 0;
+
+        .complectation {
+          border-top: 4px solid #e0e0e0;
+          padding-top: 20px;
+        }
+
+        .decr {
+          color: #323232;
+          font-family: "Gilroy";
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 131.818%;
+
+          @include fluidFontSize(18, 22, 576, 1400);
+
+          margin-bottom: 20px;
+
+          @media (max-width: 576px) {
+            margin-bottom: 15px;
+          }
+
+          span {
+            font-weight: 400;
+          }
+
+          b {
+            font-weight: 600;
+            white-space: nowrap;
+          }
+        }
+
+        .show-more-button {
+          cursor: pointer;
+          color: rgba(50, 50, 50, 0.8);
+          font-family: "Inter";
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 25px; /* 138.889% */
+          text-decoration-line: underline;
+
+          border-top: 4px solid #e0e0e0;
+          padding-top: 20px;
+          // margin-top: 20px;
+
+          @media (max-width: 992px) {
+            text-align: center;
+          }
+        }
+      }
+
+      h3 {
+        color: #323232;
+        text-align: center;
+        font-family: "Gilroy";
+        font-size: 27px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 125.926%;
+      }
+
+      &__offer {
+        .price {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 20px;
+
+          .sale {
+            border-radius: 50px;
+            background: #ff3838;
+            display: flex;
+            padding: 5px 10px;
+            justify-content: center;
+            align-items: center;
+
+            color: #fff;
+            font-family: "Inter";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 23px; /* 143.75% */
+
+            margin-bottom: 5px;
+          }
+
+          .new {
+            color: #323232;
+            font-family: "Gilroy";
+            font-size: 27px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+          }
+
+          .old {
+            color: #c8c8c8;
+            font-family: "Gilroy";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+            text-decoration: line-through;
+          }
+        }
+
+        .button {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
